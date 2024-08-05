@@ -1,4 +1,6 @@
-import { Route, Routes } from "react-router-dom";
+// src/components/AllRoutes.jsx
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./Login";
 import Home from "./Home";
 import Description from "./Description";
@@ -7,16 +9,18 @@ import Profile from "./Profile";
 import Signup from "./Signup";
 
 function AllRoutes() {
-    return (
-        <Routes>
-            <Route path="/" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/description/:id/:name" element={<Description />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/profile" element={<Profile />} />
-        </Routes>
-    )
+  return (
+    <Router basename="/BLOOM_PROJECT1/">  {/* Ensure this matches your GitHub repository name */}
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/description/:id/:name" element={<Description />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default AllRoutes
+export default AllRoutes;
