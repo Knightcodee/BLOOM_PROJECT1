@@ -99,9 +99,9 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ## Contact
 
-- Name - Himansu Sekhar Lenka
-- Gmail - himansu.lenka173@gmail.com
-- Project Link: [https://github.com/Himansu173/Blooming-Care](https://github.com/Himansu173/Blooming-Care.git)
+- Name - dambarudhar sahoo
+- Gmail - kanahasahoo@gmail.com
+
 
 ---
 
