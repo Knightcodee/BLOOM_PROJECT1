@@ -34,5 +34,6 @@
     "eslint-plugin-react-refresh": "^0.4.7",
     "gh-pages": "^6.1.1",
     "vite": "^5.3.4"
-  }
+  },
+  "homepage": "https://Knightcodee.github.io/BLOOM_PROJECT1"
 }
