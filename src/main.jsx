@@ -12,4 +12,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       </ChakraProvider>
     </BrowserRouter>
   </React.StrictMode>,
-)
+);
+reportWebVitals(console.log);
