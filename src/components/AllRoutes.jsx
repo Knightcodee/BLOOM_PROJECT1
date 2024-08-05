@@ -7,18 +7,21 @@ import Description from "./Description";
 import Contact from "./Contact";
 import Profile from "./Profile";
 import Signup from "./Signup";
+import ErrorBoundary from "./ErrorBoundary"; // Import the Error Boundary
 
 function AllRoutes() {
   return (
     <Router basename="/BLOOM_PROJECT1/">  {/* Ensure this matches your GitHub repository name */}
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/description/:id/:name" element={<Description />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/profile" element={<Profile />} />
-      </Routes>
+      <ErrorBoundary>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/description/:id/:name" element={<Description />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+      </ErrorBoundary>
     </Router>
   );
 }
